@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: #f5f0e5;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 100%;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.heading {
+  font-size: 1.2rem;
+  color: rgb(99, 90, 90);
+  font-weight: bolder;
+  padding-bottom: 40px;
+  text-shadow: 3px 3px 0 #f0f0f0, 6px 6px 0 #ccc, 9px 9px 0 #aaa;
+}
+#taskInput {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #d3d1ca;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  box-shadow: 0px 0px 5px #d3d1ca;
+  transition: box-shadow 0.3s ease;
+}
+#taskInput:hover {
+  border: 1px solid #a3a1b4;
+  box-shadow: 0px 0px 10px #a3a1b4;
+}
+.container .topbuttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.container .inputBox {
+  width: 100%;
+}
+.container .right-buttons {
+  width: 25%;
+  display: flex;
+  justify-content: right;
+}
+.right-buttons button,
+select {
+  height: 40px;
+  width: 8vw;
+  border-radius: 5px;
+}
+.topbuttons button {
+  background-color: rgb(135, 10, 245);
+  color: white;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.topbuttons button:hover {
+  background-color: #fff;
+  color: black;
+  border: 1px solid #fff;
+  /* box-shadow: 0px 0px 5px rgb(135, 10, 245); */
+  box-shadow: 0px 0px 10px 2px rgba(135, 10, 245, 0.7);
+  transform: scale(1.01);
+}
+.topbuttons select {
+  font-size: 15px;
+  padding: 5px;
+  background-color: #acaaaf;
+  outline: none;
+  border: none;
+}
+.topbuttons select:hover {
+  background-color: white;
+  border: 1px solid black;
+}
+.list-Container {
+  height: auto;
+  min-height: 70vh;
+  width: 100%;
+  background-color: #d3d1ca;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px #d3d1ca;
+}
+.list-Container div {
+  height: 50px;
+  width: auto;
+  background-color: #ffffff;
+  margin: 18px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 1px black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.list-Container div:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 10px 2px rgba(3, 3, 3, 0.5);
+}
+.list-Container div p {
+  font-size: 18px;
+  width: 67vw;
+  overflow: hidden;
+  pointer-events: none;
+}
+.list-Container section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  width: 80px;
+}
+section button {
+  background-color: #d3d1ca;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+section button:hover {
+  border: 1px solid rgb(99, 90, 90);
+}
+section i {
+  font-size: 18px;
+  color: rgb(99, 90, 90);
+  pointer-events: none;
+}
+
+@media (max-width: 850px) {
+  select {
+    display: none;
+  }
+  .container .right-buttons {
+    width: 7rem;
+  }
+  .right-buttons button {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 770px) {
+  .container .right-buttons {
+    width: 5rem;
+  }
+  .right-buttons button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 550px) {
+  .list-Container div p {
+    font-size: 15px;
+    width: fit-content;
+  }
+  section button {
+    width: 25px;
+    height: 25px;
+  }
+  section i {
+    font-size: 15px;
+  }
+  .right-buttons button {
+    width: 100%;
+  }
+}
+@media (max-width: 390px) {
+  .list-Container div p {
+    font-size: 12px;
+  }
+  .heading {
+    font-size: 0.75rem;
+  }
+}

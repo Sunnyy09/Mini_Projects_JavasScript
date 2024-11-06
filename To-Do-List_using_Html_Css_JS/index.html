@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>TODO LIST</h1>
+      </div>
+
+      <div class="topbuttons">
+        <div class="inputBox">
+          <input type="text" id="taskInput" placeholder="Enter a new task" />
+        </div>
+        <div class="right-buttons">
+          <button>Add Task</button>
+          <select name="selection">
+            <option value="All">All</option>
+            <option value="Yesterday">Yesterday</option>
+            <option value="ByDate">Select-byDate</option>
+          </select>
+        </div>
+      </div>
+      <div class="list-Container">
+        <!-- <div class="firstlist">
+          <p>Create a New Project</p>
+          <section class="btns-section">
+            <button><i class="fa-solid fa-trash"></i></button>
+            <button><i class="fa-solid fa-pen-to-square"></i></button>
+          </section>
+        </div> -->
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
