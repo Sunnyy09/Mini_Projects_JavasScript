@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #142f44;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.calculator {
+  /* background-color: #444444; */
+  min-height: 84vh;
+  max-height: 90vh;
+  width: 22rem;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px white;
+}
+.calculator:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+.inputBox {
+  padding: 5px;
+}
+.inputBox input {
+  position: static;
+  height: 90px;
+  width: 100%;
+  text-align: right;
+  font-size: 3rem;
+  color: #333;
+  background-color: #f0f0f0;
+  outline: none;
+  padding-right: 10px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.calculator .container {
+  height: 64vh;
+  width: 22rem;
+  display: flex;
+  justify-content: center;
+}
+.boxes {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 350px;
+  padding: 0px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  height: 100%;
+}
+.boxes .btn {
+  font-size: 1.8rem;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #555555;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  color: #333;
+  box-shadow: 0px 0px 5px white;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxes .btn:hover {
+  background-color: #e0e0e0;
+  color: black;
+}
+.boxes .btn:active {
+  background-color: #d0d0d0;
+  transform: scale(0.95);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.calculator .equal-operator {
+  animation: pulse 1.5s infinite;
+}
+.calculator .operator {
+  color: red;
+  font-size: 1.5rem;
+}
+.boxes i {
+  pointer-events: none;
+}
+#dot {
+  font-size: 4rem;
+  padding-bottom: 30px;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    background-color: #ffdd57;
+    transform: scale(1);
+  }
+  50% {
+    background-color: #ffd700;
+    transform: scale(1.05);
+  }
+}
