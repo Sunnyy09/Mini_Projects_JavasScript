@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form class="container" id="form">
+      <h1>City Quiz</h1>
+      <p class="quespara">
+        What city is located on two continents?
+        <button id="hintBtn">hint</button>
+      </p>
+      <p id="hintPara">City in Turkey</p>
+      <textarea id="textarea" cols="30" rows="7"></textarea>
+      <button id="submit" disabled>Submit</button>
+      <p id="loading">Loading...</p>
+      <p id="error"></p>
+    </form>
+    <div class="hide-container">
+      <h1 id="success">That's right!</h1>
+      <button id="refresh">Refresh</button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
